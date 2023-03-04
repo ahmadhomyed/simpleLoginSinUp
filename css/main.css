@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background: url(../imgs/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.login-section {
+  border: 2px solid #ff0000;
+  height: 490px;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.login-section:hover {
+  -webkit-box-shadow: 0 0 60px #ff0000;
+          box-shadow: 0 0 60px #ff0000;
+}
+
+.login-section .form-box {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-section .form-box h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.login-section .form-box .input-box {
+  width: 340px;
+  height: 50px;
+  border-bottom: 2px solid #fff;
+  position: relative;
+  margin: 30px 0;
+}
+
+.login-section .form-box .input-box label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.login-section .form-box .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding-right: 28px;
+  color: #fff;
+}
+
+.login-section .form-box .input-box input:focus ~ label,
+.login-section .form-box .input-box input:valid ~ label {
+  top: -5px;
+  color: #ff0000;
+}
+
+.login-section .form-box .input-box .icon {
+  position: absolute;
+  right: 0;
+  top: 13px;
+  font-size: 19px;
+}
+
+.login-section .form-box .remember-password {
+  font-size: 14px;
+  font-weight: 600;
+  margin: -15px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login-section .form-box .remember-password label input {
+  accent-color: #ff0000;
+  margin-right: 3px;
+}
+
+.login-section .form-box .remember-password a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.login-section .btn {
+  background-color: #ff0000;
+  outline: none;
+  width: 100%;
+  border-radius: 4px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4);
+          box-shadow: rgba(0, 0, 0, 0.4);
+}
+
+.login-section .create-account {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 25px;
+}
+
+.login-section .create-account p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.login-section .create-account p a:hover {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+.login-section .form-box.register {
+  -webkit-transform: translateY(-450px);
+          transform: translateY(-450px);
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.login-section.active .form-box.register {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.login-section .form-box.login {
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.login-section.active .form-box.login {
+  -webkit-transform: translateY(450px);
+          transform: translateY(450px);
+}
+/*# sourceMappingURL=main.css.map */
